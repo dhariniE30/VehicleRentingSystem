@@ -40,7 +40,7 @@ struct Booking {
 class RentalSystem {
 private:
     std::vector<Vehicle*> vehicles;
-    std::map<int, Booking> bookings; // Maps vehicle ID to Booking details
+    std::map<int, Booking> bookings; 
 
 public:
     ~RentalSystem() {
@@ -56,7 +56,7 @@ public:
 
         std::cout << "Enter Vehicle ID: ";
         std::cin >> id;
-        std::cin.ignore(); // Ignore leftover newline
+        std::cin.ignore(); 
         std::cout << "Enter Vehicle Name: ";
         std::getline(std::cin, name);
         std::cout << "Enter Vehicle Type (Two-Wheeler/Four-Wheeler): ";
